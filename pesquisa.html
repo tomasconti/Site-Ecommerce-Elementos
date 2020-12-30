@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+<meta charset="UTF-8">
+<title>Formulário de Cadastro de mascaras</title>
+</head>
+<body>
+<! -- Código feito por Anna Macari, Beatriz Franco e Livia Fonseca e interface Felipe Franzin-->
+       <style>
+        h2{background-color:#F5F5DC;}     
+        a:link, a:visited {
+        background-color: #f7e6ff;
+        color: black;
+        padding: 3px 6px;
+        text-align: center;
+        text-decoration:none;
+        display: inline-block;
+        }
+
+a:hover, a:active {
+  background-color:floralwhite;
+    color: black;
+}
+</style>
+
+<fieldset style="background-color:#F5DEB3 ; 
+        border-color: black; color: black";>
+<h1> Digite as características que você deseja em seu produto:</h1>
+<center><h3 style="border:2px solid #2F4F4F;">PESQUISA</h3></center>
+        <form action="pesquisa_mascara.php" method="get">
+
+<strong><b>Nome:</b></strong><br/>    
+<input type="text" name="nome" size="40" maxlength="100"><br>
+<br>
+<strong><b>Descricao:</b></strong>   
+<input type="text" name="descricao" size="40" maxlength="100">&nbsp;&nbsp;&nbsp;
+<strong><b>Cor:</b></strong>   
+<input type="text" name="cor" size="40" maxlength="100">&nbsp;&nbsp;&nbsp;
+<strong><b>Tamanho:</b></strong>    
+<input type="radio" name="tamanho" value="P">P<br>
+<input type="radio" name="tamanho" value="M">M<br>
+<input type="radio" name="tamanho" value="G">G<br>
+&nbsp;&nbsp;&nbsp;
+<strong><b>Material:</b></strong>    
+<input type="text" name="material" size="40" maxlength="100">&nbsp;&nbsp;&nbsp;
+<strong><b>Preço Máximo:</b></strong>   
+R$ <input type="number" min="0" name="preco" value="a"><br>
+<br>
+<br>
+&nbsp;<br><input type="submit" name="button" id="button" value="Enviar">&nbsp;&nbsp;
+<input type="reset" value="Limpar" class="botao"> &nbsp;<br><br>
+<a href="index.php">Voltar</a> 
+<br>
+</form> 
+</fieldset>
+</body>
+</html>  
